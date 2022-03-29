@@ -1640,7 +1640,7 @@ public extension MXRestClient {
 
      - parameters:
         - server: (optional) the remote server to query for the room list. If nil, get the user homeserver's public room list.
-        - limit:  (optional, use -1 to not defined this value) the maximum number of entries to return.
+        - limit:  (optional, use nil to request unlimited results per page) the maximum number of entries to return on a page.
         - since: (optional) token to paginate from.
         - filter: (optional) the string to search for.
         - thirdPartyInstanceId: (optional) returns rooms published to specific lists on a third party instance (like an IRC bridge).
